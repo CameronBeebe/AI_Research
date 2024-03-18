@@ -124,7 +124,7 @@
 
 \setcounter{secnumdepth}{-2}
 
-\title{AI/ML Experience and Research Plan}
+\title{Generative AI in Science: \\ Research Plan and Experience}
 \author{Cameron Beebe, Ph.D.}
 %\date{}							% Activate to display a given date or no date
 
@@ -136,23 +136,11 @@
 
 
 
-\noindent This document provides a brief overview of my research experience and associated projects in AI, both practical and theoretical.  I have emphasized where relevant to reinforcement learning and explanation.  I have attached some excerpts from my written work and some brief commentary where appropriate to explain technical points.  The full context is available in online repositories of my projects,  papers, and dissertation.  
+%\noindent This document provides a brief overview of my research experience and associated projects in AI, both practical and theoretical.  I have emphasized where relevant to reinforcement learning and explanation.  I have attached some excerpts from my written work and some brief commentary where appropriate to explain technical points.  The full context is available in online repositories of my projects,  papers, and dissertation.  
 
 
 \tableofcontents
 
-\section{Methodology}
-
-\begin{itemize}
-    \item \textbf{Large Language Models.}  I swear I will \textbf{not} use LLMs to summarize literature, write text for my papers, or to help construct ``novel'' arguments or substitute for my own effort and cognition in any way. Any use will be purely for research purposes of what they are capable of. 
-    \item \textbf{Transparent Research.}  I can and will use Git version control for my projects, and host them in GitHub repositories for transparency.  (See e.g. \href{https://github.com/CameronBeebe/Structural_Idealism}{Structural Idealism Project}.) 
-    \item \textbf{Networking.} I spent almost a decade associated with the Munich Center for Mathematical Philosophy.  I am also working on a project in philosophy of physics as an external member.  I created The SciPhi Initiative, LLC, and have used this organization for tutoring and outreach.  I will continue to use social media, primarily those where tech and AI industry experts are also present, to engage with respect to research and ethics goals.
-    \item \textbf{Interdisciplinary.}  I value very much interdisciplinary collaboration, and this has been a major characteristic of my previous academic experience at the Munich Center for Mathematical Philosophy and Graduate School of Systemic Neurosciences.
-    \item \textbf{Inclusive.}  I want to discuss diverse points of view on these topics.  See e.g. the convincing arguments from John Stuart Mill's \emph{On Liberty} for considering in particular voices less heard.
-    \item \textbf{Belief Revision.}  I will revise my beliefs and research goals as compelling new information is presented to me, within the scope of the project.
-    \item \textbf{Historical Synthesis}.  There is a lot of work (which predates widespread LLM availability) which deserves attention, critical analysis, and potential synthesis with newer work in AI.
-    
-\end{itemize}
 
 
 
@@ -160,37 +148,12 @@
 
 
 
-\section{Two Main Projects}
+\section{Generative AI in Science}
 
 
-\subsection{Machine Epistemology and Ramsey Sentences}
-
-Is it possible that an AI model could learn a different structural representation of the world compared to a typical human biological neural net, and we won’t be able to tell?  If we are going to use artificial generative models in science, what is the epistemological character of apparently new scientific information which is derived from such models?  Assuming it is plausible to suppose some kind of a divide between empirical and theoretical terms, can new information derived from generative AI ever go beyond what philosophers of science call \emph{empirical structural realism}?
-
-A neural network model can learn "empirical" laws which generalize the model's ``environment''.  We can say that the model learns an effective bias. That environment is not the same as the one humans like you and I inhabit.   We might suppose, however, that the training data encodes sufficient similarities to our own world.  Sufficient for the model to learn essentially isomorphic empirical laws to our own reality.
-
-A major follow up question is whether the model can learn the same or new \emph{theoretical} laws to our own.  In our explanations of the world we use theoretical laws, which can include potentially non-observable theoretical terms.  They are essential to our cognition of the world.  I think it is extremely unclear whether we should expect current AI models to truly learn anything like our theoretical laws (although they might mimic quite well or be pre-prompted to give the illusion that they understand them).  
-
-To truly ``learn'' theoretical laws from scratch, what would the training data need to look like, and how do mechanisms in the model "digest" the data?  If we found something which looked like a new theoretical law in the architecture or output of a model, how would we evaluate it?  What tests could we do to find out whether a model has learned different theoretical laws from our own, or new ones?  Would it matter, if the empirical laws remained isomorphic?
-
-Ramsey sentences attempt to do without theoretical terms, so perhaps we could coordinate the machine's epistemology with our own through such a formalization.  
-
-See e.g. \citep[\S 26]{Carnap1966} 
 
 
-% \subsection{Relating Learned Structures to Real Structures}
-
-% Helmholtz, Eddington, etc.
-
-% Do effective structures learned correspond to mere adaptive exploits, or actual (causal) world models.  Clearly, absent strong evidence, we should prefer the former.  However, it isn't clear from a complex systems theory point of view what the actual difference would be.
-
-% However, when we consider the phenomenological and idealist views of philosophy, some might think we smuggle back in human specialness, yet I think we should also consider that the real difference can just be understood as knowledge of the scope of different phenomenal worlds. [??]  Different environmental data distributions to adapt to.  
-
-% This is taking the ontology and epistemology of these systems very seriously, just as we would with other creatures. We seem to be able to specify, with a fairly convincing degree of justification, what the environmental data would be like for ants.  
-
-% But, what about silicon hardware implementing linear algebra circuits? [DOES THAT MAKE SENSE?]
-
-\subsection{A Methodology for Generative Confounds and the Trajectory of Science}
+\subsection{Generative Confounds and the Trajectory of Science}
 
 %After more than a decade of widespread social media use, we now have some idea how populations of humans can be affected by algorithmic content pushing.  The algorithms are driven by feedback loops on an industrial scale.  Supercomputers (petascale and, now, exascale) are employed in order to do large amounts of mathematics (conventionally matrix multiplication on forward passes and the chain rule backpropagating feedback signals) in the optimization process.  The information contained in the reinforcing signals from large populations of human consumption allows social media companies to adjust their algorithms, and make them more optimal with respect to the goal of keeping users neurochemically hooked and coming back for more content, and to serve more ads.  
 
@@ -208,29 +171,7 @@ See e.g. \citep[\S 26]{Carnap1966}
 
 %I would compare this to 
 
-There are many examples of beneficial uses and properly applied machine learning and artificial intelligence techniques in science.  [EXAMPLES: Predicting turbulent flow, protein structures, ]  It even seems uncontroversial that some of these models can indeed produce new knowledge.  [CITE FUNSEARCH]  The FunSearch results even arguably provide a form of explanation that philosophers of science might recognize.  Previously, I have argued that explanations must be able to intersubjectively transfer the capacity to control.  In the case of FunSearch, the mathematical result which was obtained was at least communicable in the form of a (low $K$ complexity!) program. The mathematical results are impressive, especially if they transfer to other areas of computation and mathematics (e.g. perhaps learning compact low $K$ representations of trained models) but arguably a long way to go from there to new theories and mechanistic explanations in other areas of science.  
 
-\begin{quote}
-    What’s more, this interpretability of FunSearch’s programs can provide actionable insights to researchers. As we used FunSearch we noticed, for example, intriguing symmetries in the code of some of its high-scoring outputs. This gave us a new insight into the problem, and we used this insight to refine the problem introduced to FunSearch, resulting in even better solutions. We see this as an exemplar for a collaborative procedure between humans and FunSearch across many problems in mathematics.
-
-    [CITE]
-\end{quote}
-
-This is a dialectical relationship to an AI model, which is arguably lacking from the current typical use of widespread models like ChatGPT, which seem to be used more like authoritative Oracles.
-
-The authors note that when FunSearch discovered a much better solution to bin packing compared to traditional heuristics, is easy to check and verify that it is indeed better.  This is exactly like the traditional framing in computational complexity theory, but \emph{what are the complexity requirements for testing scientific claims from generative models?}  Assuming we can determine the claims \emph{are testable}.  For example, claims concerning fundamental physics seem likely to require much more resources than claims about material science.
-
-I think philosophers should take great interest in this novel result, and I argue that we can understand such a result stemming from \emph{dialectical} features of the models.  Novel dialectical architectures should be pursued not just for the potential for justifiability and explainability of alleged new scientific knowledge, but also for reasons of trust and convergence.  Perhaps most importantly, however, I argue that a dialectical architecture has the potential to improve the layman's individual use of generative models.  Rather than LLMs being treated like Oracles, they should be interacted with as if they were \emph{philosophical interlocutors}.  
-
-The epistemological relationship is beneficial because it facilitates critical thinking methods like the Socratic method, rather than a dependency on something akin to confabulatory divination.  
-
-One example of what I would classify as a dialectical model is what is known as an adversarial model. Adversarial models in the past (e.g. Generative Adversarial Models, or GANs) relied on a neural network architecture which pitted one ``sub-network'' against another.  One was typically called a Generator, and a Discriminator.  This can be used for example to learn an image model that reproduces images close to a training set.  The whole system functions in an iterative loop, such that a Generator tries to fool the Discriminator, and the information of ``failure-to-fool'' is fed back to improve the Generator.  The back-and-forth tension is a reliable feedback loop mechanism.
-
-I think that we should explore other forms of architecture for dialectical models, in which the internal ``competition'' among sub-nets is composed differently, and not necessarily competitive or describable as ``fooling''.  Rather, sub-nets try to compose the best argument, and other sub-nets try to poke holes.  Importantly, as similar to the communicability part of FunSearch, such artificial systems should \emph{transparently display the dialectic between ``adversarial'' sub-nets}.  
-
-Hierarchical dialectical models represents a potentially novel architecture which I would expect to find in a successful AGI candidate.  If we are going to have AGI, we should try to engineer an architecture which not only out-competes available alternatives, but does so in a theoretically responsible way.  Naturally, what I am describing represents many potential open problems in need of solution, and I am merely speculating that (open source) development on HDMs would be more responsible than other approaches being developed in the open or in secret.  There is the possibility that AGI is dangerous no matter the architecture, and I find it likely we will have multiple competing models.
-
-I was not the first to note the similar structure of a GAN with the philosophical notion of a dialectic.  [CITE ]
 
 %So, on Oracular calls to the composed network, a dialectic is displayed.  Additionally, one should be able to call upon a ``committee'', and the function of the model is not general but specific to a critical methodology.  
 
@@ -239,7 +180,7 @@ I was not the first to note the similar structure of a GAN with the philosophica
 
 
 
-However, for quite some time now, I have been concerned with what I would call \emph{systemic confounds} from generative AI models.  These confounds are present in the results shown from popular search engines, for example ChatGPT output text copied and pasted onto popular forums like StackOverflow and Reddit, and shown by Google search.  This is the obvious ``pollution'' confound, but I believe there are much more important confounds from generative models we should focus on for the methodology of science.
+%However, for quite some time now, I have been concerned with what I would call \emph{systemic confounds} from generative AI models.  These confounds are present in the results shown from popular search engines, for example ChatGPT output text copied and pasted onto popular forums like StackOverflow and Reddit, and shown by Google search.  This is the obvious ``pollution'' confound, but I believe there are much more important confounds from generative models we should focus on for the methodology of science.
 
 
 
@@ -278,61 +219,7 @@ Atoosa also suggests simulations and modeling of the complex global system, whic
 
 
 
-
-\section{Potential Related Projects}
-
-\subsection{AI Nudges}
-
-\noindent\textbf{What effect might widespread AI nudges have on the trajectory of civilization?}
-
-%Also, if these models are based on human data with questionable privacy protections in the first place, nudges from such a model arguably represent a potential further privacy intervention on distilled data from the population.
-
-Of course, humans are not perfect, and make many of the same mistakes.  Then the epistemological responsibility is still on the humans and their values, rather than dependent on an external and mysterious artificial system.
-
-\textbf{Important Literature:} Nudging (E.g. Sunstein and Thaler, Kapsner and Sandfuchs, )
-
-
-\subsection{Focus on Bias}
-
-There is a large amount of literature about bias in artificial neural network models.  However, in my opinion this literature focuses mainly on the ethics and corrective procedures in order to balance bias (or even remove the bias totally, which under some  understanding, e.g. that of \citep{Mitchell1980}, is not particularly plausible), which I think is missing a much larger potential issue that tech and AI ethicists should be aware of.  
-
-Even if everyone agreed on criteria for an ``unbiased'' model, and everyone agreed to use it, there are fundamental epistemological limitations about whether we will be able to understand when the models are confabulating or nudging in nuanced ways that affect influential actors in society, which in turn affect the trajectory of science or politics in our civilization.
-
-
-\subsection{The Viability of Watermarking}
-
-On the issue of a polluted epistemological landscape, will we have to rely on AI tools just to know what is real?  Is there a method, such as watermarking, which could not just be required but actually adhered to?
-
-I think the possibility of reliable and ubiquitous watermarking is extremely unlikely to happen.
-
-
-\subsection{Scaling and the VC Dimension}
-
-Many papers on scale in neural networks.  Some believe indefinite scaling returns.  I think we can consider the VC dimension to make a strong argument that there will be an eventual plateau of diminishing returns.  Where those diminishing returns might happen is an interesting question.  Some think we are already there.
-
-
-
-
-\subsection{Dialectical Models (Adversarial)}
-
-Many important works in the history of philosophy are dialectical.  The Socratic method is dialectical.  Dialogues are structured arguments between protagonists and antagonists.  The biased interlocutors are engaged in a feedback loop which aims towards a resolution.  
-
-If humans interact with generative models like LLMs as if they are AI Oracles, they become more of a passive part of a  knowledge feedback loop.  Like lazily asking a teacher for the answer to a question, where effort and critical thinking and agency in the world would lead to a more satisfying embodied answer.  Reading a book and doing research and engaging one's own biological neural network has e.g. neural, neuro-chemical, and emotional value above and beyond the critical thinking skills as well.
-
-Not to mention that AI Oracles which crawl the internet for answers are encountering a more polluted environment as they try to find seemingly authoritative and genuine facts.  Generative models, and human agents who are proliferating their outputs, are polluting the very data set which would make them useful long term.  Consider an analogy with \textbf{a microphone getting too close to a speaker.}  Garbage in, garbage out.
-
-While much of this seems obvious to me after a great deal of thought the last few years, I'd be interested in hearing counterarguments.  These models aren't going away anytime soon, and banning them will not work as open source models are proliferated and competitive with closed source ones.  
-
-\textbf{I think it would be worthwhile to explore whether we might be able to develop an alternative kind of generative model which encourages non-Oracle use and critical thinking by the human user.  It outputs considered dialectic from multiple biased models.} \\
-
-\textbf{POTENTIAL CRITICISM}: One can ask current models to simulate a dialectic, or just fine tune on philosophical dialogue texts, so would we really need some new architecture for specifically dialectical models?
-
-\textbf{POTENTIAL RESPONSE}: There is no free lunch.  \cite{Wolpertetal1997}  Effective models learn bias.  \cite{Mitchell1980}  Maybe even some computational efficiency to go down the route of a cluster of adversarial and biased models.  They might also be able to be distributed better on compute devices. 
-
-
-
-
-\subsection{Ethical LLM Usage in Science}
+[MOVE]
 
 We need to develop checks and balances, proper-use directives, and standard operating procedures for the use of generative language models in science.
 
@@ -346,29 +233,208 @@ As long as there was an affidavit of human authorship, and/or affidavit of trans
 
 There is a new and extremely dominant influence in academia, and incentives to empower that influence will lead to outcomes inconsistent with the purpose of higher education if we don’t start figuring out healthy ways to use the technology.
 
-
-
-\subsection{Consulting AI Oracles}
-
-If large language models are trained on human data, we are fairly justified in suspecting that the models might encode not just grammar rules and nuances of vocabulary use cases, but also common beliefs about the world.  
-
-Furthermore, the way they are prompted (including system or guard-rail prompts) provides ``divination'' context for the consultant.
-
-\begin{quote}
-    But to satisfy the conditions of the problem, the opponents of the great thinker should have penetrated very deeply into the nature of reason, so far as it is concerned with pure thought---a task which did not suit them.  They found a more convenient method of being defiant without any insight, viz., the appeal to \emph{common sense}.  It is indeed a great gift of heaven to possess right or (as they now call it) plain common sense.  But this common sense must be shown in deeds by well-considered and reasonable thoughts and words, not by appealing to it as an oracle when no rational justification of oneself can be advanced.  To appeal to common sense when insight and science fail, and no sooner---this is one of the subtle discoveries of modern times, by means of which the most superficial ranter can safely enter the lists with the most thorough thinker and hold his own.  But as long as a particle of insight remains, no one would think of having recourse to this subterfuge.  Seen in a clear light, it is but an appeal to the opinion of the multitude, of whose applause the philosopher is ashamed, while the popular charlatan glories and confides in it.
-
-    \citep[p. 5]{KantProlegomena}
-\end{quote}
-
-
-Chapter 4 in divination book
-
-
-\subsection{What to Worry About}
-
 I agree with e.g. Anil Seth and many others when I have \emph{extreme} doubt about any sort of sentience or consciousness in mathematical models implemented on exascale supercomputers.  Given a distribution over possible things to worry about with respect to artificial intelligence, it should be low priority to think about if/whether/when these models might .
 
 Rather, we should focus more on how humans interact with these models.  Turing Tests are best understood as a measure of the ability of an artificial model to \emph{trick} humans.  Modern models, like LLMs, are trained not just on a data set, but refined through reinforcement learning from human feedback. In some very real sense, many of these models are reinforced to impress both individual humans as well as populations of humans.  \textbf{Thumbs up!}
+
+
+\subsection{Machine Epistemology, Scientific Discovery, and Ramsey Sentences}
+
+One area where generative models are increasingly being used is in the context of scientific discovery.  Is it possible that an AI model could learn a different structural representation of the world compared to a typical human biological neural net, and we won’t be able to tell?  If we are going to use artificial generative models in science, what is the epistemological character of apparently new scientific information which is derived from such models?  Assuming it is plausible to suppose some kind of a divide between empirical and theoretical terms, can new information derived from generative AI ever go beyond what philosophers of science call \emph{empirical structural realism}?
+
+A neural network model can learn "empirical" laws which generalize the model's ``environment''.  We can say that the model learns an effective bias. That environment is not the same as the one humans like you and I inhabit.   We might suppose, however, that the training data encodes sufficient similarities to our own world.  Sufficient for the model to learn essentially isomorphic empirical laws to our own reality.
+
+A major follow up question is whether the model can learn the same or new \emph{theoretical} laws to our own.  In our explanations of the world we use theoretical laws, which can include potentially non-observable theoretical terms.  They are essential to our cognition of the world.  I think it is extremely unclear whether we should expect current AI models to truly learn anything like our theoretical laws (although they might mimic quite well or be pre-prompted to give the illusion that they understand them).  
+
+To truly ``learn'' theoretical laws from scratch, what would the training data need to look like, and how do mechanisms in the model "digest" the data?  If we found something which looked like a new theoretical law in the architecture or output of a model, how would we evaluate it?  What tests could we do to find out whether a model has learned different theoretical laws from our own, or new ones?  Would it matter, if the empirical laws remained isomorphic?
+
+Ramsey sentences attempt to do without theoretical terms, so perhaps we could coordinate the machine's epistemology with our own through such a formalization.  
+
+See e.g. \citep[\S 26]{Carnap1966} 
+
+
+
+
+
+There are many examples of beneficial uses and properly applied machine learning and artificial intelligence techniques in science.  [EXAMPLES: Predicting turbulent flow, protein structures, bin-packing]  It even seems uncontroversial that some of these models can indeed produce new knowledge.  \citep{FunSearch2024}  The FunSearch results even arguably provide a form of explanation that philosophers of science might recognize.  Previously, I have argued that explanations must be able to intersubjectively transfer the capacity to control.  In the case of FunSearch, the mathematical result which was obtained was at least communicable in the form of a (low $K$ complexity) program. The mathematical results are impressive, especially if they transfer to other areas of computation and mathematics but arguably a long way to go from there to new theories and mechanistic explanations in other areas of science.  
+
+%(e.g. perhaps learning compact low $K$ representations of trained models)
+
+\begin{quote}
+    What’s more, this interpretability of FunSearch’s programs can provide actionable insights to researchers. As we used FunSearch we noticed, for example, intriguing symmetries in the code of some of its high-scoring outputs. This gave us a new insight into the problem, and we used this insight to refine the problem introduced to FunSearch, resulting in even better solutions. We see this as an exemplar for a collaborative procedure between humans and FunSearch across many problems in mathematics.
+
+    \citep{FunSearch2024}
+\end{quote}
+
+%This is a dialectical relationship to an AI model, which is arguably lacking from the current typical use of widespread models like ChatGPT, which seem to be used more like authoritative Oracles.
+
+The authors note that when FunSearch discovered a much better solution to bin packing compared to traditional heuristics, is easy to check and verify that it is indeed better.  This is exactly like the traditional framing in computational complexity theory, but \emph{what are the complexity requirements for testing scientific claims from generative models?}  Assuming we can determine the claims \emph{are testable}.  For example, claims concerning fundamental physics seem likely to require much more resources than claims about material science.
+
+I think philosophers should take great interest in this novel result, and I argue that we can understand such a result stemming from \emph{dialectical} features of the models.  Novel dialectical architectures should be pursued not just for the potential for justifiability and explainability of alleged new scientific knowledge, but also for reasons of trust and convergence.  Perhaps most importantly, however, I argue that a dialectical architecture has the potential to improve the layman's individual use of generative models.  Rather than LLMs being treated like Oracles, they should be interacted with as if they were \emph{philosophical interlocutors}.  
+
+The epistemological relationship is beneficial because it facilitates critical thinking methods like the Socratic method, rather than a dependency on something akin to confabulatory divination.  
+
+One example of what I would classify as a dialectical model is what is known as an adversarial model. Adversarial models in the past (e.g. Generative Adversarial Models, or GANs) relied on a neural network architecture which pitted one ``sub-network'' against another.  One was typically called a Generator, and a Discriminator.  This can be used for example to learn an image model that reproduces images close to a training set.  The whole system functions in an iterative loop, such that a Generator tries to fool the Discriminator, and the information of ``failure-to-fool'' is fed back to improve the Generator.  The back-and-forth tension is a reliable feedback loop mechanism.
+
+I think that we should explore other forms of architecture for dialectical models, in which the internal ``competition'' among sub-nets is composed differently, and not necessarily competitive or describable as ``fooling''.  Rather, sub-nets try to compose the best argument, and other sub-nets try to poke holes.  Importantly, as similar to the communicability part of FunSearch, such artificial systems should \emph{transparently display the dialectic between ``adversarial'' sub-nets}.  
+
+Hierarchical dialectical models represents a potentially novel architecture which I would expect to find in a successful AGI candidate.  If we are going to have AGI, we should try to engineer an architecture which not only out-competes available alternatives, but does so in a theoretically responsible way.  Naturally, what I am describing represents many potential open problems in need of solution, and I am merely speculating that (open source) development on HDMs would be more responsible than other approaches being developed in the open or in secret.  There is the possibility that AGI is dangerous no matter the architecture, and I find it likely we will have multiple competing models.
+
+I was not the first to note the similar structure of a GAN with the philosophical notion of a dialectic.  [CITE ]
+
+
+% \subsection{Relating Learned Structures to Real Structures}
+
+% Helmholtz, Eddington, etc.
+
+% Do effective structures learned correspond to mere adaptive exploits, or actual (causal) world models.  Clearly, absent strong evidence, we should prefer the former.  However, it isn't clear from a complex systems theory point of view what the actual difference would be.
+
+% However, when we consider the phenomenological and idealist views of philosophy, some might think we smuggle back in human specialness, yet I think we should also consider that the real difference can just be understood as knowledge of the scope of different phenomenal worlds. [??]  Different environmental data distributions to adapt to.  
+
+% This is taking the ontology and epistemology of these systems very seriously, just as we would with other creatures. We seem to be able to specify, with a fairly convincing degree of justification, what the environmental data would be like for ants.  
+
+% But, what about silicon hardware implementing linear algebra circuits? [DOES THAT MAKE SENSE?]
+
+
+\subsection{Do Dialectical Architectures Solve Problems?}
+
+Dialectical models have the potential to mitigate many of the ethical and epistemological issues currently present in widely used generative models.   By the term  \emph{dialectical} I mean to include several different yet related kinds of artificial neural network architectures, where the architectures have a certain kind of structure (or cluster of related structures).  These structures embody certain cybernetic or control theory principles concerning information flow and feedback loops, which we can understand fairly straightforwardly from a birds eye view using the tools of abstract phase spaces, attractors, and simple control diagrams.  
+
+Crucially, I argue that these structures also embody certain important philosophical principles which ground the thesis that dialectical AI models might represent a significant baseline for addressing many well known issues in machine learning and AI.  Consider the following list of desiderata:
+
+
+\begin{itemize}
+    \item Interpretability
+    \item Explainability
+    \item Factual Accuracy
+    \item Bias
+\end{itemize}
+
+Current widespread LLMs, for example, have trouble with these basic requirements, not to mention other nuanced issues with confabulations, safety, and other ``fallacies'' which might derive from the above.  How might one design an alternative internal architecture (mathematical functions and computational mechanisms) capable of systematically protecting against such issues?  
+Consider the architecture of what is called a \textbf{generative adversarial network}, or GAN.  GANs consist of two sub-networks which iteratively interact with each other such that the ``learned'' structure of each sub-net is specialized.  One sub-net, called a \emph{generator} $G$, tries to fool the other sub-net (which we call a \emph{discriminator} $D$) by iteratively generating a data example which ideally could be from the same distribution as the original training data set.  For example, in the case of a set of images, $G$ would (again, \emph{ideally}) learn how to generate an image such that $D$ would be ``fooled''.  Such an architecture can also be thought of as a two-player game, and more details can be found in the original paper .
+
+
+At this point I'm sure many philosophers might already find it understandable why it might make sense to refer to such an architecture as ``dialectical''.  Alas, as far as I can tell, such a connection was first described in a technical paper.
+
+The mechanism of a philosophical dialectic between two or more interlocutors is famous from writings as early as Plato.  Other more sophisticated accounts of a dialectic (with metaphysical implications) were developed from Hegel.  \citep{sep-hegel-dialectics}  Crucially, the method of critical dialectic involves epistemological principles like \emph{belief revision}, linguistic and conceptual clarity, and ultimately and \emph{ideally} the process leads one further towards justified true beliefs. 
+
+
+
+
+
+I will argue that philosophers of science might be more interested in the sort of interpretability they are capable of compared to alternative architectures.  Because of their architecture, they have the obvious ability to internally compensate or error-correct, if designed properly.  Once a common kind of error is known, e.g. confabulation aka hallucination in LLMs, a dialectical LLM would have an architecture where there is an internal adversarial sub-component.
+
+Elon has said the goal of AI should be for it to be ``maximally truth seeking''.  This implies a \emph{process} or \emph{mechanism} which approaches truth or is less wrong over time.  Underlying this is, arguably, an assumption that AI models should not be interacted with as if they are Oracles.  Integrated with the $\mathbb{X}$ social media platform, xAI released the weights of their model \texttt{grok} on March 17, 2024.  It was also revealed that grok is a \emph{mixture of experts} model.  See e.g. \citep{HFMOE} for a primer on MoE models.
+
+Another is mitigating bias, but in a different way than other approaches which seek to balance bias---or even create ideal ``unbiased'' models.  I find these approaches problematic, since 
+
+There is a large amount of literature about bias in artificial neural network models.  However, in my opinion this literature focuses mainly on the ethics and corrective procedures in order to balance bias (or even remove the bias totally, which under some  understanding, e.g. that of \citep{Mitchell1980}, is not particularly plausible), which I think is missing a much larger potential issue that tech and AI ethicists should be aware of.  
+
+Even if everyone agreed on criteria for an ``unbiased'' model, and everyone agreed to use it, there are fundamental epistemological limitations about whether we will be able to understand when the models are confabulating or nudging in nuanced ways that affect influential actors in society, which in turn affect the trajectory of science or politics in our civilization.
+
+
+[CHECK DIALECTICAL GANS PAPER: DO THEY GO BEYOND HEGELIAN IDEA I.E. Open debate ala JSM etc.]
+
+Many important works in the history of philosophy are dialectical.  The Socratic method is dialectical.  Dialogues are structured arguments between protagonists and antagonists.  The biased interlocutors are engaged in a feedback loop which aims towards a resolution.  
+
+If humans interact with generative models like LLMs as if they are AI Oracles, they become more of a passive part of a  knowledge feedback loop.  Like lazily asking a teacher for the answer to a question, where effort and critical thinking and agency in the world would lead to a more satisfying embodied answer.  Reading a book and doing research and engaging one's own biological neural network has e.g. neural, neuro-chemical, and emotional value above and beyond the critical thinking skills as well.
+
+Not to mention that AI Oracles which crawl the internet for answers are encountering a more polluted environment as they try to find seemingly authoritative and genuine facts.  Generative models, and human agents who are proliferating their outputs, are polluting the very data set which would make them useful long term.  Consider an analogy with \textbf{a microphone getting too close to a speaker.}  Garbage in, garbage out.
+
+%While much of this seems obvious to me after a great deal of thought the last few years, I'd be interested in hearing counterarguments.  These models aren't going away anytime soon, and banning them will not work as open source models are proliferated and competitive with closed source ones.  
+
+%\textbf{I think it would be worthwhile to explore whether we might be able to develop an alternative kind of generative model which encourages non-Oracle use and critical thinking by the human user.  It outputs considered dialectic from multiple biased models.} \\
+
+\textbf{POTENTIAL CRITICISM}: One can ask current models to simulate a dialectic, or just fine tune on philosophical dialogue texts, so would we really need some new architecture for specifically dialectical models? [REMOVE THIS?]
+
+\textbf{POTENTIAL RESPONSE}: There is no free lunch.  \cite{Wolpertetal1997}  Effective models learn bias.  \cite{Mitchell1980}  Maybe even some computational efficiency to go down the route of a cluster of adversarial and biased models. They might also be able to be distributed better on compute devices. [THATS ACTUALLY WHAT FUNSEARCH AND MIX OF EXPERTS DO AND THERE ARE COMPUTATIONAL BENEFITS]
+
+
+
+
+
+\section{Methodology}
+
+\begin{itemize}
+    \item \textbf{Large Language Models.}  I swear I will \textbf{not} use LLMs to summarize literature, write text for my papers, or to help construct ``novel'' arguments or substitute for my own effort and cognition in any way. Any use will be purely for research purposes of what they are capable of, in accordance with department guidelines.  If there are no department guidelines, I would work to help create them. 
+    \item \textbf{Transparent Research.}  I can and will use Git version control for my projects, and host them in GitHub repositories for transparency.  (See e.g. \href{https://github.com/CameronBeebe/Structural_Idealism}{Structural Idealism Project}.) 
+    \item \textbf{Networking.} I spent almost a decade associated with the Munich Center for Mathematical Philosophy.  I am also working on a project in philosophy of physics as an external member.  I created The SciPhi Initiative, LLC, and have used this organization for tutoring and outreach.  I will continue to use social media, primarily those where tech and AI industry experts are also present, to engage with respect to research and ethics goals.
+    \item \textbf{Interdisciplinary.}  I value very much interdisciplinary collaboration, and this has been a major characteristic of my previous academic experience at the Munich Center for Mathematical Philosophy and Graduate School of Systemic Neurosciences.
+    \item \textbf{Inclusive.}  I want to discuss diverse points of view on these topics.  I find the arguments from John Stuart Mill's \emph{On Liberty} \citep{OnLiberty1859} convincing for considering diverse voices less heard and developing a ``living truth'' rather than a ``dead dogma''.
+    \item \textbf{Belief Revision.}  I will revise my beliefs and research goals as compelling new information is presented to me, within the scope of the project.
+    \item \textbf{Historical Synthesis}.  There is a lot of work (which predates widespread LLM availability) which deserves attention, critical analysis, and potential synthesis with newer work in AI.
+    
+\end{itemize}
+
+
+
+
+
+
+
+%\section{Potential Related Projects}
+
+% \subsection{AI Nudges}
+
+% \noindent\textbf{What effect might widespread AI nudges have on the trajectory of civilization?}
+
+% %Also, if these models are based on human data with questionable privacy protections in the first place, nudges from such a model arguably represent a potential further privacy intervention on distilled data from the population.
+
+% Of course, humans are not perfect, and make many of the same mistakes.  Then the epistemological responsibility is still on the humans and their values, rather than dependent on an external and mysterious artificial system.
+
+% \textbf{Important Literature:} Nudging (E.g. Sunstein and Thaler, Kapsner and Sandfuchs, )
+
+
+%\subsection{Focus on Bias}
+
+
+
+
+% \subsection{The Viability of Watermarking}
+
+% On the issue of a polluted epistemological landscape, will we have to rely on AI tools just to know what is real?  Is there a method, such as watermarking, which could not just be required but actually adhered to?
+
+% I think the possibility of reliable and ubiquitous watermarking is extremely unlikely to happen.
+
+
+% \subsection{Scaling and the VC Dimension}
+
+% Many papers on scale in neural networks.  Some believe indefinite scaling returns.  I think we can consider the VC dimension to make a strong argument that there will be an eventual plateau of diminishing returns.  Where those diminishing returns might happen is an interesting question.  Some think we are already there.
+
+
+
+
+%\subsection{Dialectical Models (Adversarial)}
+
+
+
+%\subsection{Ethical LLM Usage in Science}
+
+
+
+
+
+% \subsection{Consulting AI Oracles}
+
+% If large language models are trained on human data, we are fairly justified in suspecting that the models might encode not just grammar rules and nuances of vocabulary use cases, but also common beliefs about the world.  
+
+% Furthermore, the way they are prompted (including system or guard-rail prompts) provides ``divination'' context for the consultant.
+
+% \begin{quote}
+%     But to satisfy the conditions of the problem, the opponents of the great thinker should have penetrated very deeply into the nature of reason, so far as it is concerned with pure thought---a task which did not suit them.  They found a more convenient method of being defiant without any insight, viz., the appeal to \emph{common sense}.  It is indeed a great gift of heaven to possess right or (as they now call it) plain common sense.  But this common sense must be shown in deeds by well-considered and reasonable thoughts and words, not by appealing to it as an oracle when no rational justification of oneself can be advanced.  To appeal to common sense when insight and science fail, and no sooner---this is one of the subtle discoveries of modern times, by means of which the most superficial ranter can safely enter the lists with the most thorough thinker and hold his own.  But as long as a particle of insight remains, no one would think of having recourse to this subterfuge.  Seen in a clear light, it is but an appeal to the opinion of the multitude, of whose applause the philosopher is ashamed, while the popular charlatan glories and confides in it.
+
+%     \citep[p. 5]{KantProlegomena}
+% \end{quote}
+
+
+% Chapter 4 in divination book
+
+
+% \subsection{What to Worry About}
+
+% I agree with e.g. Anil Seth and many others when I have \emph{extreme} doubt about any sort of sentience or consciousness in mathematical models implemented on exascale supercomputers.  Given a distribution over possible things to worry about with respect to artificial intelligence, it should be low priority to think about if/whether/when these models might .
+
+%Rather, we should focus more on how humans interact with these models.  Turing Tests are best understood as a measure of the ability of an artificial model to \emph{trick} humans.  Modern models, like LLMs, are trained not just on a data set, but refined through reinforcement learning from human feedback. In some very real sense, many of these models are reinforced to impress both individual humans as well as populations of humans.  \textbf{Thumbs up!}
 
 
 
@@ -737,13 +803,13 @@ which was implied by our list of desiderata above.  Formula \ref{eq:contourconfi
 
 \section{Deep Learning Internship at Cray, Inc.}
 
-\noindent Cray, now part of Hewlett Packard Enterprise,  manufactures supercomputers. They also provide high performance software to help customers like national scientific labs deploy jobs onto petascale and exascale compute clusters. \\
+\noindent Cray, now part of Hewlett Packard Enterprise,  manufactures supercomputers (putting together racks, cabinets, interconnects). They also provide high performance software to help customers like national scientific labs deploy jobs onto petascale and exascale compute clusters. \\
 
-\noindent I worked with Cray's Distributed Deep Learning Plugin team. The plugin is a simple wrapper to modify python machine learning scripts to work across GPU clusters, using MPI (e.g. AllReduce) to communicate gradients between threads and average them.  I applied, tested, and experimented with the Plugin across multiple GPUs (gradient averaging using MPI), on a variety of ANN architectures including: LSTM, CNN, CapsNet, and Deep RL/DQN.  The latter was the most sophisticated, and should have been prioritized since I ended up running out of time before the plugin was functional on a deep reinforcement learning model. \\
+\noindent I worked with Cray's Distributed Deep Learning Plugin team. The plugin is a simple wrapper to modify python machine learning scripts to work across GPU clusters, using MPI (e.g. AllReduce) to communicate gradients between threads and average them.  I applied, tested, and experimented with the Plugin across multiple GPUs (gradient averaging using MPI), on a variety of ANN architectures including: LSTM, CNN, CapsNet, and Deep RL/DQN.  The latter was the most sophisticated, and should have been prioritized since I ended up running out of time in the internship before the plugin was functional on a deep reinforcement learning model. \\
 
 \noindent \textbf{What I Used:} Python, Jupyter, Slurm, SSH onto \faLinux \  Linux GPU clusters, Keras, Anaconda, Bash, Git.  I mainly used Keras, scheduled jobs via Slurm, managed ML/DL packages and versions with Anaconda and pip, and committed code to internal git repos. \\
 
-\noindent \textbf{What I Learned:}  Parallelization (MPI) through distributing computation to threads and communicating between them.  Initiation task for me was to estimate pi with a Monte Carlo simulation in Fortran.  \\
+\noindent \textbf{What I Learned:}  Parallelization (MPI) through distributing computation to threads and communicating between them.  Initiation task on day 1 was to estimate the value of $\pi$ with a parallelized Monte Carlo simulation in Fortran.  \\
 
 \noindent \textbf{Example Code Repo:} \href{https://github.com/CameronBeebe/Monte_Carlo}{Monte Carlo calculating pi with MPI and pyspark}
 
@@ -769,15 +835,15 @@ Coding project in agent based modeling course at the MCMP using the Netlogo prog
 
 \section{Academic environment and relevant courses in Math and AI}
 
-Most courses I took involved math, programming, and formal methods to varying degrees at the Munich Center for Mathematical Philosophy (MCMP) and Graduate School of Systemic Neurosciences (GSN).  \\
+Most courses I took involved some math, programming, and formal methods to varying degrees at LMU and through the Munich Center for Mathematical Philosophy (MCMP) and Graduate School of Systemic Neurosciences (GSN).  \\
 
 \noindent The philosophy curriculum at the MCMP required basic formal methods: probability theory, information theory, formal logic, and basic linear algebra and calculus if working in more technical areas in philosophy of physics and interdisciplinary AI theory.  \\
 
 \noindent Formal epistemology, rationality, and other philosophical aspects of cognition in consideration of artificial systems. \\
 
-\noindent Some of the courses included: \\
+%\noindent Some of the courses included: \\
 
-Weekly Neurophilosophy seminars, Machine Epistemology (Wheeler), Rationality (Roy), The Unity and Plurality of Cognitive Science, Statistical Modeling and Data Analysis (Leibold), Philosophy of Probability (Mayo-Wilson), Quantum Information and Entanglement (Paredes), Philosophy of Quantum Computation (Cuffaro)\dots
+%Weekly Neurophilosophy seminars, Machine Epistemology (Wheeler), Rationality (Roy), The Unity and Plurality of Cognitive Science, Statistical Modeling and Data Analysis (Leibold), Philosophy of Probability (Mayo-Wilson), Quantum Information and Entanglement (Paredes), Philosophy of Quantum Computation (Cuffaro)\dots
 
 
 \section{Coding}
@@ -792,8 +858,7 @@ For the last year and a half I have been working at a cultivation facility start
 \begin{itemize}
     \item \textbf{Measurement and Recording}: PH; total dissolved solids (tds) or parts per million (ppm); water temperature; room humidity and temperatures; nutrient solution amounts; plant waste weight; 
     \item \textbf{Calibration}: PH and TDS measurement devices.
-    \item \textbf{Measurement:} 
-    \item \textbf{Preparation:} Mixing nutrients
+    \item \textbf{Analysis:} We get reports of endogenous chemical composition in crop yields as tested by authorized labs, as well as reports of pesticide and spore residue (which must be below legal thresholds for sale).
 \end{itemize}
 \end{multicols}
 
@@ -804,8 +869,8 @@ For the last year and a half I have been working at a cultivation facility start
 \item PyData talk on Transfer Learning
 \item Nano degree Deep Learning (Udacity)
 \item Talk at HLRS Stuttgart on Ashby's Cybernetics and characterizing ANNs as cybernetic regulators.
-\item ML Reading Group at MCMP (Sterkenberg)
-\item Outreach: talk about ChatGPT at local library.
+\item ML Reading Group attendance MCMP 2022 (Sterkenberg)
+\item Talk about ChatGPT at local library in Nederland, CO.
 \end{itemize}
 \end{multicols}
 
