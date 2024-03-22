@@ -308,15 +308,13 @@ If we are going to use dialectical models in the context of scientific discovery
 
 One area where generative models are increasingly being used is in the context of scientific discovery.  Is it possible that an AI model could learn a different structural representation of the world compared to a typical human biological neural net, and we won’t be able to tell?  If we are going to use artificial generative models in science, what is the epistemological character of apparently new scientific information which is derived from such models?  Assuming it is plausible to suppose some kind of a divide between empirical and theoretical terms, can new information derived from generative AI ever go beyond what philosophers of science call \emph{empirical structural realism}?
 
-A neural network model can learn "empirical" laws which generalize the model's ``environment''.  We can say that the model learns an effective bias. That environment is not the same as the one humans like you and I inhabit.   We might suppose, however, that the training data encodes sufficient similarities to our own world.  Sufficient for the model to learn essentially isomorphic empirical laws to our own reality.
+A neural network model can learn `empirical' laws which generalize the model's `environment'.  We can say that the model learns an effective bias. That environment is not the same as the one humans like you and I inhabit.   We might suppose, however, that the training data encodes sufficient similarities to our own world.  Sufficient for the model to learn essentially isomorphic empirical laws to our own reality.
 
 A major follow up question is whether the model can learn the same or new \emph{theoretical} laws to our own.  In our explanations of the world we use theoretical laws, which can include potentially non-observable theoretical terms.  They are essential to our cognition of the world.  I think it is extremely unclear whether we should expect current AI models to truly learn anything like our theoretical laws (although they might mimic quite well or be pre-prompted to give the illusion that they understand them).  
 
 To truly ``learn'' theoretical laws from scratch, what would the training data need to look like, and how do mechanisms in the model "digest" the data?  If we found something which looked like a new theoretical law in the architecture or output of a model, how would we evaluate it?  What tests could we do to find out whether a model has learned different theoretical laws from our own, or new ones?  Would it matter, if the empirical laws remained isomorphic?
 
-Ramsey sentences attempt to do without theoretical terms, so perhaps we could coordinate the machine's epistemology with our own through such a formalization.  
-
-See e.g. \citep[\S 26]{Carnap1966} 
+Ramsey sentences attempt to do without theoretical terms, so perhaps we could coordinate the machine's epistemology with our own through such a formalization.  See e.g. \citep[\S 26]{Carnap1966} for a philosophical introduction to Ramsey sentences.
 
 
 The recent launch of OpenAI's model Sora \citep{Sora2024} brought to light a question about the capability to imitate physics, and whether scene simulators in the future like Sora might be capable to do what traditionally is the domain of persistent 3D game engines and actual physical theories.  Obvious limitations, like in-persistent objects behind occlusions, indicate that a model like Sora does not have a physics world model which is comparable to a 3D game engine, where such persistence is trivially built in.  However, we can imagine a Sora-like model which overcomes many of the current drawbacks---even all of them.  In that case, what is the difference between a 3D game engine and Sora?  Would it even be worth rendering a 3D environment if all that mattered was the \emph{consistent appearance} of a scene?
@@ -326,7 +324,7 @@ Consider a structural description of such a world. Would it differ from the stru
 
 
 
-There are many examples of beneficial uses and properly applied machine learning and artificial intelligence techniques in science.  [EXAMPLES: Predicting turbulent flow, protein structures, bin-packing]  It even seems uncontroversial that some of these models can indeed produce new knowledge.  \citep{FunSearch2024}  The FunSearch results even arguably provide a form of explanation that philosophers of science might recognize.  Previously, I have argued that explanations must be able to intersubjectively transfer the capacity to control.  In the case of FunSearch, the mathematical result which was obtained was at least communicable in the form of a (low $K$ complexity) program. The mathematical results are impressive, especially if they transfer to other areas of computation and mathematics but arguably a long way to go from there to new theories and mechanistic explanations in other areas of science.  
+There are many examples of beneficial uses and properly applied machine learning and artificial intelligence techniques in science.  [EXAMPLES: Predicting turbulent flow, protein structures, bin-packing]  It even seems uncontroversial that some of these models can indeed produce new knowledge.  \citep{FunSearch2024}  The FunSearch results even arguably provide a form of explanation that philosophers of science might recognize.  Previously, I have argued that explanations must be able to intersubjectively transfer the capacity to control.  In the case of FunSearch, the mathematical result which was obtained was at least communicable in the form of a (low $K$ complexity) program. The mathematical results are impressive, especially if they transfer to other areas of computation and mathematics but arguably there is a long way to go from there to new theories and mechanistic explanations in other areas of science.  
 
 %(e.g. perhaps learning compact low $K$ representations of trained models)
 
@@ -344,13 +342,13 @@ I think philosophers should take great interest in this novel result, and I argu
 
 The epistemological relationship is beneficial because it facilitates critical thinking methods like the Socratic method, rather than a dependency on something akin to confabulatory divination.  
 
-One example of what I would classify as a dialectical model is what is known as an adversarial model. Adversarial models in the past (e.g. Generative Adversarial Models, or GANs) relied on a neural network architecture which pitted one ``sub-network'' against another.  One was typically called a Generator, and a Discriminator.  This can be used for example to learn an image model that reproduces images close to a training set.  The whole system functions in an iterative loop, such that a Generator tries to fool the Discriminator, and the information of ``failure-to-fool'' is fed back to improve the Generator.  The back-and-forth tension is a reliable feedback loop mechanism.
+One example of what I would classify as a dialectical model is what is known as an adversarial model. Adversarial models in the past (e.g. Generative Adversarial Models, or GANs) relied on a neural network architecture which pitted one ``sub-network'' against another.  One was typically called a Generator, and the other a Discriminator.  This can be used for example to learn an image model that reproduces images close to a training set.  The whole system functions in an iterative loop, such that a Generator tries to fool the Discriminator, and the information of ``failure-to-fool'' is fed back to improve the Generator.  The back-and-forth tension is a reliable feedback loop mechanism.
 
 I think that we should explore other forms of architecture for dialectical models, in which the internal ``competition'' among sub-nets is composed differently, and not necessarily competitive or describable as ``fooling''.  Rather, sub-nets try to compose the best argument, and other sub-nets try to poke holes.  Importantly, as similar to the communicability part of FunSearch, such artificial systems should \emph{transparently display the dialectic between ``adversarial'' sub-nets}.  
 
-Hierarchical dialectical models represents a potentially novel architecture which I would expect to find in a successful AGI candidate.  If we are going to have AGI, we should try to engineer an architecture which not only out-competes available alternatives, but does so in a theoretically responsible way.  Naturally, what I am describing represents many potential open problems in need of solution, and I am merely speculating that (open source) development on HDMs would be more responsible than other approaches being developed in the open or in secret.  There is the possibility that AGI is dangerous no matter the architecture, and I find it likely we will have multiple competing models.
+Hierarchical dialectical models (HDMs) represent a potentially novel architecture which I would expect to find in a successful AGI candidate.  If we are going to have AGI, we should try to engineer an architecture which not only out-competes available alternatives, but does so in a theoretically responsible way.  Naturally, what I am describing represents many potential open problems in need of solution, and I am merely speculating that (open source) development on HDMs would be more responsible than other approaches being developed in the open or in secret.  There is the possibility that AGI is dangerous no matter the architecture, and I find it likely we will have multiple competing models.
 
-I was not the first to note the similar structure of a GAN with the philosophical notion of a dialectic.  [CITE ]
+An interesting reference which merges the concept of dialectics with GANs for the purposes of image enhancement (e.g. aerial photos of Munich) is found in \citep{DialecticalGANS2018}.  I find it a bit hasty use of Hegel, but nevertheless the authors use the philosophical theory of thesis, antithesis, synthesis to innovate on model architecture.
 
 
 % \subsection{Relating Learned Structures to Real Structures}
@@ -460,9 +458,9 @@ If we take seriously any of the arguments from high profile researchers on catas
 
 Elon has said the goal of AI should be for it to be ``maximally truth seeking''.  This implies a \emph{process} or \emph{mechanism} which approaches truth or is less wrong over time.  Underlying this is, arguably, an assumption that AI models should not be interacted with as if they are Oracles.  Integrated with the $\mathbb{X}$ social media platform, xAI released the weights of their model \texttt{grok} on March 17, 2024.  It was also revealed that grok is a \emph{mixture of experts} model.  See e.g. \citep{HFMOE} for a primer on MoE models.
 
-Another is mitigating bias, but in a different way than other approaches which seek to balance bias---or even create ideal ``unbiased'' models.  I find these approaches problematic, since 
+%Another is mitigating bias, but in a different way than other approaches which seek to balance bias---or even create ideal ``unbiased'' models.  I find these approaches problematic, since 
 
-There is a large amount of literature about bias in artificial neural network models.  However, in my opinion this literature focuses mainly on the ethics and corrective procedures in order to balance bias (or even remove the bias totally, which under some  understanding, e.g. that of \citep{Mitchell1980}, is not particularly plausible), which I think is missing a much larger potential issue that tech and AI ethicists should be aware of.  
+There is a large amount of literature about bias in artificial neural network models.  However, in my opinion this literature focuses mainly on the ethics and corrective procedures in order to balance bias (or even remove the bias totally, which under some  understanding, e.g. that of \citep{Mitchell1980}, is not particularly plausible since effective models learn inductive bias), which I think is missing a much larger potential issue that tech and AI ethicists should be aware of.  Pitting bias against bias in a dialectical architecture seems more plausible to me.  Related is the well-known No Free Lunch result \citep{Wolpertetal1997}, and we should not expect one model to be able to be optimized to handle all biases.  However, a plurality of specialized models interacting with each other seems to escape such an objection.
 
 Even if everyone agreed on criteria for an ``unbiased'' model, and everyone agreed to use it, there are fundamental epistemological limitations about whether we will be able to understand when the models are confabulating or nudging in nuanced ways that affect influential actors in society, which in turn affect the trajectory of science or politics in our civilization.
 
@@ -503,6 +501,7 @@ There is no free lunch.  \cite{Wolpertetal1997}  Effective models learn bias.  \
     \item \textbf{Inclusive.}  I want to discuss diverse points of view on these topics.  I find the arguments from John Stuart Mill's \emph{On Liberty} \citep{OnLiberty1859} convincing for considering diverse voices less heard and developing a ``living truth'' rather than a ``dead dogma''.
     \item \textbf{Belief Revision.}  I will revise my beliefs and research goals as compelling new information is presented to me, within the scope of the project.
     \item \textbf{Historical Synthesis}.  There is a lot of work (which predates widespread LLM availability) which deserves attention, critical analysis, and potential synthesis with newer work in AI.
+    \item \textbf{Teaching.}  No use of generative models allowed by students.  Consistent with the methods at the MCMP, when feasible and applicable I believe formal methods and basic programming should be introduced to philosophy students.  See \href{https://github.com/CameronBeebe/Probability_Intro/blob/main/Coins.ipynb}{this jupyter notebook on basic probability as an example of an assignment.}
     
 \end{itemize}
 
@@ -988,7 +987,7 @@ Most courses I took involved some math, programming, and formal methods to varyi
 
 \section{Coding}
 
-I have the most experience with python and associated packages and tools.  I have used jupyter notebooks, pandas, scikit-learn, keras (and some tensorflow through tf.keras), and other related packages.  Before I got into python I also used Netlogo (a language specialized for agent based modeling and visualization), some octave and matlab, and I am comfortable working through the command line on linux/unix terminals.  In general, I am able to read and write code and learn new syntax if I have to.  
+I have the most experience with python and associated packages and tools.  I have used jupyter notebooks, pandas, scikit-learn, keras (and some tensorflow through tf.keras), and other related packages.  Before I got into python I also used Netlogo (a language specialized for agent based modeling and visualization), some octave and matlab, and I am comfortable working through the command line on linux/unix terminals.  In general, I am able to read and write code and learn new syntax.  
 
 \section{Real World Data Experience}
 
@@ -1009,7 +1008,7 @@ For the last year and a half I have been working at a cultivation facility start
 \item PyData talk on Transfer Learning
 \item Nano degree Deep Learning (Udacity)
 \item Talk at HLRS Stuttgart on Ashby's Cybernetics and characterizing ANNs as cybernetic regulators.
-\item ML Reading Group attendance MCMP 2022 (Sterkenberg)
+\item ML Reading Group attendance MCMP 2022 (Dr. Sterkenberg)
 \item Talk about ChatGPT at local library in Nederland, CO.
 \end{itemize}
 \end{multicols}
