@@ -136,7 +136,7 @@
 
 
 
-I plan to assess the capabilities of generative artificial intelligence for scientific discovery. While acknowledging successes, I focus on potential limits to the use of generative models for scientific discovery.  This research plan outlines the topics I would like to work on, lays out a methodology, and finally summarises my relevant background.
+Mitigating risk from generative artificial intelligence in science should focus on three areas: innovation of novel architectures, individual use of models, understanding limits of generative scientific discovery. This research plan outlines briefly outlines the research area I would like to work on, lays out a methodology, provides writing samples and summarises my relevant background.
 
 %This research plan proposes to philosophically address and contextualize the current (and perhaps future) capability of generative artificial intelligence with respect to scientific discovery.  
 
@@ -176,11 +176,28 @@ Following Atoosa Kasirzadeh’s recent arguments for considering accumulative ri
 Widely available generative language models (LLMs) have problems, like confabulation, which architectural innovations can mitigate.  A recent example of architectural innovation \citep{FunSearch2024} shows how, in the context of scientific discovery, confabulations can be overcome.  What kinds of effective architectural innovations should we expect in the future, and are there limits to what we could discover even with an ideal generative model?  Are there potential risks from generative models by scientists which is particular to the context of discovery?
 
 
-With respect to \textbf{i)}, I consider the potential of innovative models which can be understood as having  \emph{dialectical features}.  This understanding can be grounded in the history of philosophical dialogues between interlocutors, and the notion of dialectic from argumentation theory.  This process would lead towards or terminate in a `resolution'.  Such a resolution could be understood as a compromise between differences of opinion, synthesis between ideas, or belief in a more approximate truth.  Indeed, one could compare (as Popper does in \citep{PopperCR1963}) the scientific method to a more abstract notion of a dialectical process (like Hegel's) if one is careful to avoid certain pitfalls of the overly broad thesis-antithesis-synthesis framework. Under a restricted sense, I do think that `dialectical' can be responsibly used to describe the class of complex systems I want to discuss.
+A cluster of interesting model architectures I argue can be understood as having \emph{dialectical features}.  This understanding can be grounded in the history of philosophical dialogues between interlocutors, and the notion of dialectic from argumentation theory.  The mechanism of a philosophical dialectic between two or more interlocutors is famous from writings as early as Plato.  Other more sophisticated accounts of a dialectic (with metaphysical implications) were developed from Hegel.  \citep{sep-hegel-dialectics}  Crucially, I take the method of a critical dialectic to involve epistemological principles like \emph{belief revision}, linguistic and conceptual clarity, and ultimately and \emph{ideally} the process leads one further towards justified true beliefs.
 
 
 
 
+From a systems theory point of view and formal modeling perspective, we could characterize a dialecticical system in terms of agent based modeling, game theory, and information theory.  A `dialectical architecture' for the context of this project thus describes a certain class of systems of interacting and functionally specialized components.  Perhaps the most well-known example of such an architecture is a generative adversarial network (GAN).  GANs learn sub-networks (generator vs. discriminator) which are pitted against each other in a training loop.  The two sub-networks iteratively interact with each other such that the `learned' structure of each sub-net is specialized.  Such an architecture can also be thought of as a two-player minimax game.  \citep{GANS2014}  Another architecture we might consider to be dialectical is so-called Mixture of Experts (MoE) with gating or router networks directing input to specialized sub-net `experts' for processing.  See e.g. \citep{HFMOE} for a primer on MoE models and the original paper \citep{MixtureExperts1991}.  These models have hybrid architectures and seem to rely on a cluster of certain structural systems properties, information or game theoretic principles (i.e. `competitive learning') between interacting sub-components. 
+
+
+
+%One sub-net, called a \emph{generator} $G$, tries to `fool' the other sub-net (which we call a \emph{discriminator} $D$) by generating a data example which could be mistaken as coming from the same distribution as the original training data set.  For example, in the case of a set of images, $G$ would (again, \emph{ideally}) learn how to generate an image such that $D$ would be ``fooled''.  
+
+
+Game theory in particular provides a useful tool for understanding and characterizing certain properties of complex systems as a dynamic interaction between players.  From a systems theory point of view, there are early game theoretic characterizations of cybernetics from \citep{Ashby1958}. I have argued in my dissertation that such a theoretical foundation clearly applies also in the context of artificial neural networks.  \citep{Beebe2021}  Including in the original GAN paper \citep{GANS2014}, many find game theory to be a useful framework for innovating on neural network architectures.  Particular focus so far appears to be on so-called Stackelberg game understandings of GANs.  See for example the survey in \citep{GameTheoryDLSurvey2022}, and the use of game theory and `adversarial learning' to improve adversarial example vulnerabilities in a model \citep{AdversarialLearning2021}.
+
+
+
+
+Games have equilibria, but a dialectical process is sometimes characterized as leading towards or terminating in a `resolution'.  Such a resolution could be understood as a compromise between differences of opinion, synthesis between ideas, or belief in a more approximate truth.  Indeed, one could compare (as Popper does in \citep{PopperCR1963}) the scientific method to a more abstract notion of a dialectical process (like Hegel's) if one is careful to avoid certain pitfalls of the overly broad thesis-antithesis-synthesis framework. Under a restricted sense, I do think that `dialectical' can be responsibly used to describe the class of complex systems I want to discuss.
+
+
+
+There is a large amount of literature about bias in artificial neural network models.  However, in my opinion this literature focuses mainly on the ethics and corrective procedures in order to balance bias (or even remove the bias totally, which under some  understanding, e.g. that of \citep{Mitchell1980}, is not particularly plausible since effective models learn inductive bias), which I think is missing a much larger potential issue that tech and AI ethicists should be aware of.  Pitting bias against bias in a dialectical architecture seems more plausible to me.  Related is the well-known No Free Lunch result \citep{Wolpertetal1997}, and we should not expect one model to be able to be optimized to handle all biases.  However, a plurality of specialized models interacting with each other seems to exploit somewhat of a loophole if compute is abundant. [STERKENBERG?]
 
 
 
@@ -193,15 +210,18 @@ With respect to \textbf{i)}, I consider the potential of innovative models which
 
 
 
-From a systems theory point of view and formal modeling perspective, we could characterize a dialecticical system in terms of agent based modeling, game theory, and information theory.  A `dialectical architecture' for the context of this project thus describes a certain class of systems of interacting and functionally specialized components.  Perhaps the most well-known example of such an architecture is a generative adversarial network (GAN).  I also consider mixture of expert (MoE) models and other hybrid architectures (perhaps also what are called neurosymbolic) which rely on certain structural, informational, or game theoretic principles (i.e. `competitive learning') between interacting sub-components (e.g. a gating or router net in an MoE).  \citep{MixtureExperts1991}  
 
-We might reasonably expect that such kinds of mechanistic components, when properly engineered and combined (also with traditional non-adversarial or non-dialectic components), might be capable of meaningfully mitigating some of the widely acknowledged issues in widespread generative models (e.g. bias, confabulation or hallucination, explainability and interpretability).  However, the architecture of a model will only go so far in promoting responsible use of such models by individuals.  I think it will be worthwhile for philosophers to consider characterizing the epistemological relationship between a user and the generative model.  In the case of widely available LLMs, this relationship reminds  one of the consultation of a divine Oracle. 
-
+We might reasonably expect that such kinds of mechanistic components, when properly engineered and combined (also with traditional non-adversarial or non-dialectic components), might be capable of meaningfully mitigating some of the widely acknowledged issues in widespread generative models (e.g. bias, confabulation or hallucination, explainability and interpretability).  However, the architecture of a model will only go so far in promoting responsible use of such models by individuals.  Additionally, when it comes to using generative models for the purposes of advancing scientific knowledge or generating new scientific theories, philosophers should be concerned about an entirely new set of problems and limitations.
 
 
 
+%I think it will be worthwhile for philosophers to consider characterizing the epistemological relationship between a user and the generative model.  In the case of widely available LLMs, this relationship reminds  one of the consultation of a divine Oracle. 
 
-Specialized and narrow models (e.g. for predicting turbulent flow) are of a wholly different character from large language models (LLMs).  The latter affect many aspects of the work flow of scientists, and arguably the critical thinking process of reading and writing and forming arguments.  Additionally, if we are going to use generative models like LLMs for scientific discovery in areas like fundamental physics (or in borderline areas which may be considered metaphysics by some), there are major resource costs to checking and testing generative claims.  Time and money.  A similar `pollution' point also affects the economic trade offs for peer review.  Generative models, if not checked, are beginning to flood the zone of critical intellectual effort.
+
+
+
+
+Specialized and narrow models (e.g. for predicting turbulent flow) are of a wholly different character from large language models (LLMs).  The latter affect many aspects of the work flow of scientists, and arguably the critical thinking process of reading and writing and forming arguments.  Additionally, if we are going to use generative models like LLMs for scientific discovery in areas like fundamental physics (or in borderline areas which may be considered metaphysics by some), there are major resource costs to checking and testing generative claims.  Time and money.  A similar `pollution' point also affects the economic trade offs for peer review.  Generative models are beginning to flood the zone of critical intellectual effort.
 
 
 
@@ -239,34 +259,32 @@ This is especially important when considering generative AI with the aim of maki
 
 
 
-The mechanism of a philosophical dialectic between two or more interlocutors is famous from writings as early as Plato.  Other more sophisticated accounts of a dialectic (with metaphysical implications) were developed from Hegel.  \citep{sep-hegel-dialectics}  Crucially, the method of critical dialectic involves epistemological principles like \emph{belief revision}, linguistic and conceptual clarity, and ultimately and \emph{ideally} the process leads one further towards justified true beliefs.
 
 
 
-Generative Adversarial Networks (GANs) are an example of dialectical architectures.  GANs learn sub-networks (generator vs. discriminator) which are pitted against each other in a training loop.  The two sub-networks iteratively interact with each other such that the `learned' structure of each sub-net is specialized.  One sub-net, called a \emph{generator} $G$, tries to `fool' the other sub-net (which we call a \emph{discriminator} $D$) by generating a data example which could be mistaken as coming from the same distribution as the original training data set.  For example, in the case of a set of images, $G$ would (again, \emph{ideally}) learn how to generate an image such that $D$ would be ``fooled''.  Such an architecture can also be thought of as a two-player minimax game, the details of which can be found in the original paper.  \citep{GANS2014}
+
+%Generative Adversarial Networks (GANs) are an example of dialectical architectures.  GANs learn sub-networks (generator vs. discriminator) which are pitted against each other in a training loop.  The two sub-networks iteratively interact with each other such that the `learned' structure of each sub-net is specialized.  One sub-net, called a \emph{generator} $G$, tries to `fool' the other sub-net (which we call a \emph{discriminator} $D$) by generating a data example which could be mistaken as coming from the same distribution as the original training data set.  For example, in the case of a set of images, $G$ would (again, \emph{ideally}) learn how to generate an image such that $D$ would be ``fooled''.  Such an architecture can also be thought of as a two-player minimax game, the details of which can be found in the original paper.  \citep{GANS2014}
 
 
-Game theory thus provides a tool for understanding and characterizing certain properties of complex systems as a dynamic interaction between players.  From a systems theory point of view, there are early game theoretic characterizations of cybernetics from \citep{Ashby1958}. I have argued in my dissertation that such a theoretical foundation applies also in the context of artificial neural networks.  \citep{Beebe2021}  Including in the original GAN paper \citep{GANS2014}, many find game theory to be a useful framework for innovating on neural network architectures.  Particular focus so far appears to be on so-called Stackelberg game understandings of GANs.  See for example the survey in \citep{GameTheoryDLSurvey2022}, and the use of game theory and ``adversarial learning'' to improve adversarial example vulnerabilities in a model \citep{AdversarialLearning2021}.
+
 
 One very interesting new model particular to scientific discovery with a novel architecture was recently published, called FunSearch.  \citep{FunSearch2024}  In addition to combining an LLM with another component to mitigate confabulations, the FunSearch results even arguably provide a form of explanation that philosophers of science might recognize.  In the case of FunSearch, the mathematical result which was obtained was at least communicable in the form of a (low $K$ complexity) program. This ended up providing a positive feedback with the researchers who used such a clear program of results to further discover even better solutions to a problem.
 
 
-Another architecture we might consider to be dialectical is so-called Mixture of Experts (MoE).  See e.g. \citep{HFMOE} for a primer on MoE models and the original paper \citep{MixtureExperts1991}.
-
-
-There is a large amount of literature about bias in artificial neural network models.  However, in my opinion this literature focuses mainly on the ethics and corrective procedures in order to balance bias (or even remove the bias totally, which under some  understanding, e.g. that of \citep{Mitchell1980}, is not particularly plausible since effective models learn inductive bias), which I think is missing a much larger potential issue that tech and AI ethicists should be aware of.  Pitting bias against bias in a dialectical architecture seems more plausible to me.  Related is the well-known No Free Lunch result \citep{Wolpertetal1997}, and we should not expect one model to be able to be optimized to handle all biases.  However, a plurality of specialized models interacting with each other seems to exploit somewhat of a loophole if compute is abundant. [STERKENBERG?]
 
 
 
-Are Dialectical Models Capable of Scientific Discovery?  What would scaling arguments look like for hierarchical dialectical models?  Would we expect, as available compute and networks scaled, that such systems continuously find usefully novel and efficiently testable scientific theories which are better than current networks of scientists are capable of coming up with?  Or, will there be diminishing returns?  I think the latter is more reasonable to expect, and think that the history of philosophy has important lessons to consider.
 
 
-The ``intelligence'' of artificial systems is largely derived from learning structural representations of regularities in training data. We could call this ``artificial structural empiricism'': mathematical functions learn to cope with training data primarily by adjusting randomly initialized ``pre-theoretical'' weights.  This coping is parametric in a way that renders unobservable theoretical terms either redundant or obsolete.  (The ``upward path'' to structural realism from Psillos, see e.g. \citep[\S 3]{sep-structural-realism}.)
 
 
-Ultimately, I see the problem of how to evaluate  scientific discovery from generative models (especially in areas like fundamental physics) as roughly falling into debates over convergent realism and structural realism.
+Are dialectical models capable of genuine scientific discovery, if there is such a thing?  What would scaling arguments look like for hierarchical dialectical models?  Would we expect, as available compute and networks scaled, that such systems continuously find usefully novel and efficiently testable scientific theories which are better than current networks of scientists are capable of coming up with?  Or, will there be diminishing returns?  I think the latter is more reasonable to expect, and think that the history of philosophy has important lessons to consider.
 
-There theories may be in principle falsifiable, but we should also consider whether there might be sophisticated components of a generative theory (linguistic, mathematical, or otherwise) which exceed the capacity of networks of scientists to efficiently evaluate.  I argue such a potential situation represents a risk from generative AI, and it may happen in an accumulative manner as outlined in \citep{Kasirzadeh2024WIP}. 
+
+The `intelligence' of artificial systems is largely derived from learning structural representations of regularities in training data. We could call this ``artificial structural empiricism'': mathematical functions learn to cope with data primarily by adjusting randomly initialized `pre-theoretical' weights.  This coping is parametric in a way that renders unobservable theoretical terms either redundant or obsolete.  It seems plausible to evaluate generative scientific discovery  (especially in potential areas like fundamental physics) as roughly falling into debates over empiricism, convergent realism and structural realism.  For example, artificially intelligent agents so far seem to follow the empirical `upward path' to structural realism from Psillos, see e.g. \citep[\S 3]{sep-structural-realism}.  The `empirical data' for AI is of course derivative on the world as humans experience it.
+
+
+We should consider whether there might be sophisticated components of a generated theory (linguistic, mathematical, or otherwise) which exceed the capacity of networks of scientists to efficiently evaluate.  I argue such a potential situation represents a risk from generative AI, and it may happen in an accumulative manner as outlined in \citep{Kasirzadeh2024WIP}. 
 
 
 \section{Methodology}
