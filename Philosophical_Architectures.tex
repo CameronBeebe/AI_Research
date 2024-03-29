@@ -1,0 +1,80 @@
+\subsection{Philosophical Foundations for Architectural Innovations}
+
+We would like to engineer a mechanism or process which tends or approaches a "less wrong" state.  In philosophy, many will have heard of the Socratic method, for example.  John Stuart Mill's On Liberty is a more recent example, where the process of open dialogue is more important than the actual state of truth.  In a slogan, we want a living truth, not a dead dogma.  I take this to mean that if we want to engineer veridical artificial systems we must prioritize engineering a robust process and not an efficient look up.  This is the difference between the Socratic method and consulting an Oracle.
+
+In general, we can call a structured dialogue between disagreeing interlocutors a dialectic.  The rigorous method of pitting neural networks against each other is, I argue, a method which may be a reliable way to mitigate errors and biases in an artificial system. 
+
+
+[CONDENSE]
+
+Many important works in the history of philosophy are dialectical.  The Socratic method is dialectical.  Dialogues are structured arguments between protagonists and antagonists.  The biased interlocutors are engaged in a feedback loop which aims towards a resolution.  I think philosophers should pay particular attention to what can be called dialectical architectures in artificial intelligence models.  Such architectures may, when properly engineered, be able to meaningfully mitigate some of the widely acknowledged issues in widespread generative models (e.g. bias, confabulation or hallucination, explainability and interpretability).
+
+
+
+The mechanism of a philosophical dialectic between two or more interlocutors is famous from writings as early as Plato.  Other more sophisticated accounts of a dialectic (with metaphysical implications) were developed from Hegel.  \citep{sep-hegel-dialectics}  Crucially, the method of critical dialectic involves epistemological principles like \emph{belief revision}, linguistic and conceptual clarity, and ultimately and \emph{ideally} the process leads one further towards justified true beliefs. 
+
+
+
+
+
+
+
+
+By the term dialectical I mean to include several different yet related artificial neural network architectures.  I argue that the structures of these architectures embody certain cybernetic or control theory principles concerning information flow and feedback loops, which we can understand fairly straightforwardly from a birds eye view using the tools of abstract phase spaces, attractors, and simple control diagrams.  I argue that these structures also embody certain important philosophical principles which ground the thesis that dialectical AI models might represent a significant baseline for addressing many well known issues in machine learning and AI.
+
+
+
+Generative Adversarial Networks (GANs) are an example of dialectical architectures.  GANs learn sub-networks (generator vs. discriminator) which are pitted against each other in a training loop.  The two sub-networks iteratively interact with each other such that the `learned' structure of each sub-net is specialized.  One sub-net, called a \emph{generator} $G$, tries to `fool' the other sub-net (which we call a \emph{discriminator} $D$) by generating a data example which could be mistaken as coming from the same distribution as the original training data set.  For example, in the case of a set of images, $G$ would (again, \emph{ideally}) learn how to generate an image such that $D$ would be ``fooled''.  Such an architecture can also be thought of as a two-player minimax game, the details of which can be found in the original paper.  \citep{GANS2014}
+
+
+Game theory thus provides a tool for understanding and characterizing certain properties of complex systems as a dynamic interaction between players.  From a systems theory point of view, there are early game theoretic characterizations of cybernetics from \citep{Ashby1958}. I have argued in my dissertation that such a theoretical foundation applies also in the context of artificial neural networks.  \citep{Beebe2021}  Including in the original GAN paper \citep{GANS2014}, many find game theory to be a useful framework for innovating on neural network architectures.  Particular focus so far appears to be on so-called Stackelberg game understandings of GANs.  See for example the survey in \citep{GameTheoryDLSurvey2022}, and the use of game theory and ``adversarial learning'' to improve adversarial example vulnerabilities in a model \citep{AdversarialLearning2021}.
+
+%There are many examples of beneficial uses and properly applied machine learning and artificial intelligence techniques in science.  [EXAMPLES: Predicting turbulent flow, protein structures, bin-packing]  
+
+
+
+In the case of images, GANs have been used to create so-called DeepFakes.  Obviously, in such a case, undesirable ethical problems are created rather than mitigated.  Reinforcement learning signals are directed towards optimizing the ability to impress (or fool) the discriminator.
+
+Similarly with LLMs, the RLHF signals are directed towards impressing a large population of humans, rather than towards a group of experts.  This makes confabulation a feature, not a bug.  However, I argue that the interesting results in the FunSearch paper represent innovation towards a dialectical architecture, where the confabulatory feature of LLMs is used in a structured interaction with other sub-components in a larger system.
+
+
+
+One very interesting new model particular to scientific discovery with a novel architecture was recently published, called FunSearch.  \citep{FunSearch2024}  In addition to combining an LLM with another component to mitigate confabulations, the FunSearch results even arguably provide a form of explanation that philosophers of science might recognize.  In the case of FunSearch, the mathematical result which was obtained was at least communicable in the form of a (low $K$ complexity) program. This ended up providing a positive feedback with the researchers who used such a clear program of results to further discover even better solutions to a problem. 
+
+%(e.g. perhaps learning compact low $K$ representations of trained models)
+
+\begin{quote}
+    What’s more, this interpretability of FunSearch’s programs can provide actionable insights to researchers. As we used FunSearch we noticed, for example, intriguing symmetries in the code of some of its high-scoring outputs. This gave us a new insight into the problem, and we used this insight to refine the problem introduced to FunSearch, resulting in even better solutions. We see this as an exemplar for a collaborative procedure between humans and FunSearch across many problems in mathematics.
+
+    \citep{FunSearch2024}
+\end{quote}
+
+%This is a dialectical relationship to an AI model, which is arguably lacking from the current typical use of widespread models like ChatGPT, which seem to be used more like authoritative Oracles.
+
+The authors note that when FunSearch discovered a much better solution to bin packing compared to traditional heuristics, is easy to check and verify that it is indeed better.  This is exactly like the traditional framing in computational complexity theory, but \emph{what are the complexity requirements for testing scientific claims from generative models?}  Assuming we can determine the claims \emph{are testable}.  For example, claims concerning fundamental physics seem likely to require much more resources than claims about material science.
+
+I think philosophers should take great interest in this novel result, and I argue that we can understand such a result stemming from \emph{dialectical} features of the models.  Novel dialectical architectures should be pursued not just for the potential for justifiability and explainability of alleged new scientific knowledge, but also for reasons of trust and convergence.  Perhaps most importantly, however, I argue that a dialectical architecture has the potential to improve the layman's individual use of generative models.  Rather than LLMs being treated like Oracles, they should be interacted with as if they were \emph{philosophical interlocutors}.
+
+
+An interesting reference which merges the concept of dialectics with GANs for the purposes of image enhancement (e.g. aerial photos of Munich) is found in \citep{DialecticalGANS2018}.  I find it a bit hasty use of Hegel, but nevertheless the authors use the philosophical theory of thesis, antithesis, synthesis to innovate on model architecture.
+
+
+Another architecture we might consider to be dialectical is so-called Mixture of Experts (MoE).  See e.g. \citep{HFMOE} for a primer on MoE models and the original paper \citep{MixtureExperts1991}.  An MoE model has recently been deployed by and integrated into the $\mathbb{X}$ social media platform, and xAI open sourced the weights of their model \texttt{grok} on March 17, 2024.  
+
+
+
+The approach in \citep{Norelli2022} has some interesting comments on learning explanations, and trying to incorporate Popper's ideas into their architecture. However, I do not find that what are called `explanations' in their framework approximates what are traditionally called explanations in science.  That is, they do not seem to me to be above simple empirical generalization rules.  For example, I don't see how they could be compared to causal mechanistic explanations.  However, the architecture does seem interesting and there is arguably a dialectic component between generation and interpretation. \citep{Pearl2021} calls for a hybrid approach to overcome what he calls `radical empiricism':
+
+\begin{quote}
+    A hybrid strategy balancing ``data-fitting'' with ``data-interpretation'' better captures the stages of knowledge compilation that the evolutionary processes entails. \citep[p. 80]{Pearl2021}
+\end{quote}
+
+
+
+
+%\subsection{Machine Epistemology, Scientific Discovery, and Ramsey Sentences}
+
+There is a large amount of literature about bias in artificial neural network models.  However, in my opinion this literature focuses mainly on the ethics and corrective procedures in order to balance bias (or even remove the bias totally, which under some  understanding, e.g. that of \citep{Mitchell1980}, is not particularly plausible since effective models learn inductive bias), which I think is missing a much larger potential issue that tech and AI ethicists should be aware of.  Pitting bias against bias in a dialectical architecture seems more plausible to me.  Related is the well-known No Free Lunch result \citep{Wolpertetal1997}, and we should not expect one model to be able to be optimized to handle all biases.  However, a plurality of specialized models interacting with each other seems to exploit somewhat of a loophole if compute is abundant. [STERKENBERG?]
+
+
+If we take seriously any of the arguments from high profile researchers on catastrophic or accumulative risk in the development and deployment of AI systems (in particular also the drive towards AGI), then philosophers should care about the direction of architectural innovations in AI models for the same reason that they care about what processes produce reliable knowledge about the world.  Such an undertaking is fundamentally interdisciplinary in a critically important way.  In my opinion, this is more than just about ethics or safety, this is about the integrity of human values and trajectory of civilization.
