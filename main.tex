@@ -124,7 +124,7 @@
 
 \setcounter{secnumdepth}{-2}
 
-\title{Generative AI and Scientific Discovery: \\ Research Plan and Experience}
+\title{Limits and Risks of Generative Scientific Discovery}
 \author{Cameron Beebe, Ph.D.}
 %\date{}							% Activate to display a given date or no date
 
@@ -136,7 +136,11 @@
 
 
 
-Assessing the limitations and risks from generative models used for scientific discovery, I focus on three areas: \textbf{i)} innovation of novel generative architectures; \textbf{ii)} responsible individual use of generative models; \textbf{iii)} how networks of scientists use generative models for discovery. This document includes a brief outlines the research area I would like to work on, lays out a methodology, provides writing samples, and summarises my relevant background for the project.
+%Assessing the limitations and risks from generative models used for scientific discovery, I focus on three areas: \textbf{i)} innovation of novel generative architectures; \textbf{ii)} responsible individual use of generative models; \textbf{iii)} how networks of scientists use generative models for discovery. 
+
+Generative machine learning models have produced non-trivial new scientific knowledge.  Are there limits to the production of such knowledge? What risks, if any, might the particular use of generative tools pose to the scientific method?  I address these questions by examining three aspects of generative models:  \textbf{i)} current directions of innovation in generative model architectures used for discovery; \textbf{ii)} use of generative models by individuals and in scientific networks; \textbf{iii)} the evaluation of generative scientific discoveries. This document briefly outlines the project and my methodology, provides writing samples, and other relevant experience.\footnote{I swear no part of this document was artificially generated, and was written by me.}
+
+%Respectively, dialectical argumentation theory in the context of architectural innovations, including important debates from philosophy of science to characterize potential new knowledge derived from generative models.
 
 %This research plan proposes to philosophically address and contextualize the current (and perhaps future) capability of generative artificial intelligence with respect to scientific discovery.  
 
@@ -163,7 +167,7 @@ Assessing the limitations and risks from generative models used for scientific d
 \section{Limits and Risks of Generative Scientific Discovery}
 
 
-Generative machine learning models, when used in certain ways, have been demonstrated to produce non-trivial new scientific knowledge.  Are there limits to such knowledge? What risks, if any, might the particular use of generative tools in the context of discovery pose to the scientific method?  To begin to answer these questions I will consider three relevant aspects of generative models and their use in science:  \textbf{i)} innovation in generative model architectures used for discovery; \textbf{ii)} responsible individual use of generative models; \textbf{iii)} how networks of scientists use generative models for scientific discovery.  \\
+
 
 
 %If new theories are generated, what status should they be afforded?  How would we explain a scientific discovery which was produced by a generative model?
@@ -185,7 +189,7 @@ Generative machine learning models, when used in certain ways, have been demonst
 
 %\subsection{Generative Architectures}
 
-\noindent\textbf{Generative Architectures:} Widely available generative language models (LLMs) have problems, like confabulation, which architectural innovations can mitigate.  A recent example of architectural innovation \citep{FunSearch2024} shows how, in the context of (successful) discovery, confabulations can be overcome.  What kinds of effective architectural innovations should we expect in the future, and are there limits to what we could discover even with an ideal generative model?  Are there potential risks from generative models by scientists which are particular to the context of discovery?
+\noindent\textbf{Generative Architectures:} Widely available generative language models (LLMs) have problems, like confabulation, which architectural innovations can mitigate.  A recent example of architectural innovation \citep{FunSearch2024} shows how, in the context of (successful) discovery, confabulations can be overcome.  What kinds of effective architectural innovations should we expect in the future, and are there limits to what we could discover even with an ideal generative model?  Are there potential risks specific to scientific use of generative models in the context of discovery?
 
 
 I argue that a cluster of innovative generative models can be understood as having \emph{dialectical architectures}.  This understanding can be grounded in the history of philosophical dialogues, from writings as early as Plato.  The structured linguistic arguments between interlocutors is seen as a corrective process.    In this context, the method of a dialectic involves  epistemological principles like \emph{belief revision}, linguistic and conceptual clarity, and ultimately there is justification to believe the process leads the system of interlocutors further towards justified true beliefs.
@@ -195,23 +199,29 @@ I argue that a cluster of innovative generative models can be understood as havi
 
 
 
-From a systems theory point of view and formal modeling perspective, we could characterize a dialecticical system in terms of agent based modeling, game theory, and information theory.  A `dialectical architecture' for the context of this project thus describes a certain class of artificial systems with interacting and functionally specialized components.  I consider that perhaps the most well-known example of such an architecture is a generative adversarial network (GAN).  GANs learn sub-networks (generator vs. discriminator) which are pitted against each other in a training loop.  The two sub-networks iteratively interact with each other such that the `learned' structure of each sub-net is specialized.  Such an architecture can also be thought of as a two-player minimax game.  \citep{GANS2014}  Another architecture we might consider to be dialectical is so-called Mixture of Experts (MoE) with gating or router networks directing input to specialized sub-net `experts' for processing.  See e.g. \citep{HFMOE} for a primer on MoE models and the original paper \citep{MixtureExperts1991}.  These models have hybrid architectures and seem to rely on a cluster of certain structural systems properties, information or game theoretic principles (i.e. `competitive learning') between interacting sub-components. Andrew Ng writes in his latest newsletters about the importance of an `agentic workflow' in state of the art models, including multi-agent `reflection' as a tool to overcome limitations of LLMs.\footnote{\href{https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/}{March 20, 2024 Letter.}}\footnote{\href{https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-2-reflection/}{March 27, 2024 Letter.}}  One example, CRITIC, employs external critiques or checks on LLM outputs through tools like code interpreters, search engines, and calculators.  The authors liken the interactive process between components to fact checking in journalism.  \citep{CRITIC2024}  This is an extremely clear example of current innovation in generative AI towards dialectical architectures.
+From a systems theory point of view and formal modeling perspective, we could characterize a dialecticical system in terms of agent based modeling, game theory, and information theory.  A `dialectical architecture' for the context of this project thus describes a certain class of artificial systems with interacting and functionally specialized components.  I consider that perhaps the most well-known example of such an architecture is a generative adversarial network (GAN).  GANs learn sub-networks (generator vs. discriminator) which are pitted against each other in a training loop.  The two sub-networks iteratively interact with each other such that the `learned' structure of each sub-net is specialized.  Such an architecture can also be thought of as a two-player minimax game.  \citep{GANS2014}  Another architecture we might consider to be dialectical is so-called Mixture of Experts (MoE) with gating or router networks directing input to specialized sub-net `experts' for processing.  See e.g. \citep{HFMOE} for a primer on MoE models and the original paper \citep{MixtureExperts1991}.  
+
+These models have `hybrid' architectures and seem to rely on a cluster of certain structural systems properties, information or game theoretic principles (i.e. `competitive learning') between interacting sub-components. Andrew Ng writes in his latest newsletters about the importance of an `agentic workflow' in state of the art models, including multi-agent `reflection' as a tool to overcome limitations of LLMs.\footnote{\href{https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/}{March 20, 2024 Letter.}}\footnote{\href{https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-2-reflection/}{March 27, 2024 Letter.}}  One example, CRITIC, employs external critiques or checks on LLM outputs through tools like code interpreters, search engines, and calculators.  The authors liken the interactive process between components to fact checking in journalism.  \citep{CRITIC2024}  This is an extremely clear example of current innovation in generative AI towards dialectical architectures.
 
 
 
 %One sub-net, called a \emph{generator} $G$, tries to `fool' the other sub-net (which we call a \emph{discriminator} $D$) by generating a data example which could be mistaken as coming from the same distribution as the original training data set.  For example, in the case of a set of images, $G$ would (again, \emph{ideally}) learn how to generate an image such that $D$ would be ``fooled''.  
 
 
-Game theory in particular provides a useful tool for understanding and characterizing certain properties of complex systems as a dynamic interaction between players.  From a systems theory point of view, there are early game theoretic characterizations of cybernetics from \cite{Ashby1958}. I have argued in my dissertation that such a theoretical foundation clearly applies also in the context of artificial neural networks.  \citep{Beebe2021}  Including in the original GAN paper \citep{GANS2014}, many find game theory to be a useful framework for innovating on neural network architectures.  Particular focus so far appears to be on so-called Stackelberg games.  See for example the survey in \cite{GameTheoryDLSurvey2022}. \cite{AdversarialLearning2021} provide another example of the use of game theory and `adversarial learning' to improve adversarial example vulnerabilities in a model .
+Game theory in particular provides a useful tool for understanding and characterizing certain properties of complex systems as a dynamic interaction between players.  From a systems theory point of view, there are early game theoretic characterizations of cybernetics from \cite{Ashby1958}. I have argued in my dissertation that such a theoretical foundation clearly applies also in the context of artificial neural networks.  \citep{Beebe2021}  Including in the original GAN paper \citep{GANS2014}, many find game theory to be a useful framework for innovating on neural network architectures.  Particular focus so far appears to be on so-called Stackelberg games.  See for example the survey in \cite{GameTheoryDLSurvey2022}. \cite{AdversarialLearning2021} provide another example of the use of game theory and `adversarial learning' to improve adversarial example vulnerabilities of a model.
 
 
 
 
-Games have equilibria, but a dialectical process is sometimes characterized as leading towards or terminating in a `resolution'.  Such a resolution could be understood as a compromise between differences of opinion, synthesis between ideas, or belief in a more approximate truth.  Indeed, one could compare (as \cite{PopperCR1963} does) the scientific method to a more abstract notion of a dialectical process if one is careful to avoid certain pitfalls of the overly broad thesis-antithesis-synthesis framework. Under a restricted sense, I do think that `dialectical' can be responsibly used to describe the class of complex systems I want to discuss.
+Games have equilibria, but a dialectical process is sometimes characterized as leading towards or terminating in a `resolution'.  Such a resolution could be understood as a compromise between differences of opinion, synthesis between ideas, or belief in a more approximate truth.  Indeed, one could compare (as \cite{PopperCR1963} does) the scientific method to a more abstract notion of a dialectical process if one is careful to avoid certain pitfalls of the overly broad thesis-antithesis-synthesis framework. Under a restricted sense, I do think that `dialectical' can be responsibly used to describe the class of complex systems I want to discuss.  Pitting bias against bias in a dialectical architecture such as in those innovative models discussed briefly above seems to me to be more likely to mitigate issues with generative models.  \\
+
+%Related is the well-known No Free Lunch result \citep{Wolpertetal1997}, and we should not expect one model to be able to be optimized to handle all biases.  However, a plurality of specialized (sub-)models interacting with each other seems to be a way out. \\
 
 
 
-There is a large amount of literature about bias in artificial neural network models.  However, in my opinion this literature focuses mainly on the ethics and corrective procedures in order to balance bias (or even remove the bias totally, which under some  understanding, e.g. that of \cite{Mitchell1980}, is not particularly plausible since effective models learn inductive bias), which I think is missing a much larger potential issue that tech and AI ethicists should be aware of.  Pitting bias against bias in a dialectical architecture such as in those innovative models discussed briefly above seems to me to be more likely to mitigate issues with generative models.  Related is the well-known No Free Lunch result \citep{Wolpertetal1997}, and we should not expect one model to be able to be optimized to handle all biases.  However, a plurality of specialized (sub-)models interacting with each other seems to be a way out. \\
+%There is a large amount of literature about bias in artificial neural network models.  However, in my opinion this literature focuses mainly on the ethics and corrective procedures in order to balance bias (or even remove the bias totally, which under some  understanding, e.g. that of \cite{Mitchell1980}, is not particularly plausible since effective models learn inductive bias), which I think is missing a much larger potential issue that tech and AI ethicists should be aware of.  
+
+
 
 % Need to finish reading STERKENBERG as I think it applies to last point, but they seem to not be talking about NFL in optimization?  
 
@@ -241,7 +251,9 @@ There is a large amount of literature about bias in artificial neural network mo
 
 
 
-Specialized and narrow models (e.g. for predicting turbulent flow) are of a wholly different character from large language models (LLMs).  The latter affect many aspects of the work flow of scientists, and arguably the critical thinking process of reading and writing and forming arguments.  Additionally, if we are going to use generative models like LLMs for scientific discovery in areas like fundamental physics (or in borderline areas which may be considered metaphysics by some), there are major resource costs to checking and testing generative claims.  Time and money.  As generative models become more widely used, we must consider generative `pollution' affecting the economic trade offs for peer review.  Generative models are beginning to flood the zone of critical intellectual effort by humans.
+Specialized and narrow ANN models are of a wholly different character from recently popular generative large language models (LLMs). The way each type are used also differ.  The former example are used as tools of discovery much like other scientific models or other computational methods.  Generative language models are used more like oracles. Use of LLMs, and multi-modal expansions of LLMs, can affect many aspects of the work flow and methodology of scientists. When prompted, and to varying degrees of success, these models can generate code, text, arguments, diagrams, graphs, images, and sounds.  They can summarize text, translate text, and perform literature reviews. They can also suggest apparently new theories or possible experiments, or even attempt metaphysical speculation.  
+
+%If many scientists incorporate generative models into their methodology, the potential resulting generative `pollution' affects the economic trade offs for evaluating .  for scientific discovery in areas like fundamental physics (or in borderline areas which may be considered metaphysics by some), there are major resource costs (e.g. time) to checking and testing generated claims. Generative models are beginning to flood the zone of critical intellectual effort by humans.
 
 
 
@@ -288,7 +300,7 @@ This is especially important when considering generative AI with the aim of maki
 
 
 
-One very interesting new model particular to scientific discovery with a novel architecture was recently published, called FunSearch.  \citep{FunSearch2024}  In addition to combining an LLM with another component to mitigate confabulations, the FunSearch results even arguably provide a form of explanation that philosophers of science might recognize.  In the case of FunSearch, the mathematical result which was obtained was at least communicable in the form of a (low $K$ complexity) program. This ended up providing a positive feedback with the researchers who used such a clear program of results to further discover even better solutions to a problem. \\
+One very interesting new model particular to scientific discovery with a novel architecture was recently published, called FunSearch.  \citep{FunSearch2024}  Again, an LLM was combined with other components to mitigate confabulations.  The FunSearch results even provided a form of explanation that philosophers of science might recognize. A mathematical result was obtained and communicated in the form of a (low $K$ complexity) program. This ended up providing a positive feedback with the researchers who used such a clear program of results to further discover even better solutions to the problem. \\
 
 
 
@@ -323,12 +335,12 @@ Is such an understanding what we would expect to find in a scaled up version of 
     \item \textbf{Transparent Research.}  I can and will use Git version control for my projects, and host them in GitHub repositories for transparency.  An updated repository of projects in this proposal can be found \href{https://github.com/CameronBeebe/AI_Research}{here.}  This is a useful tool for evidencing work and mitigating academic misuse of generative models.  Diffs are automatically computed for each commit.
     
     %(See e.g. \href{https://github.com/CameronBeebe/Structural_Idealism}{Structural Idealism Project} and 
-    \item \textbf{Networking.} I spent almost a decade associated with the Munich Center for Mathematical Philosophy, where networking was heavily emphasized.  During my Ph.D. at the GSN I was also associated with the Research Center for Neurophilosophy and Ethics of Neurosciences.  I created The SciPhi Initiative, LLC, and have used this organization for tutoring and outreach online and locally in Colorado.  I will use social media, where tech and AI industry experts are also present, to engage in discussion on project topics.
+    \item \textbf{Networking.} I spent almost a decade associated with the Munich Center for Mathematical Philosophy, where networking was heavily emphasized.  During my Ph.D. at the GSN I was also associated with the Research Center for Neurophilosophy and Ethics of Neurosciences.  I created The SciPhi Initiative, LLC, and have used this organization for tutoring and outreach online and locally in Colorado.  I will use social media, where tech and AI industry experts are also present, to engage in discussion on project topics and follow fast paced developments.
     \item \textbf{Interdisciplinary.}  I value very much interdisciplinary collaboration, and this has been a major characteristic of my previous academic experience at the Munich Center for Mathematical Philosophy and Graduate School of Systemic Neurosciences.
     \item \textbf{Inclusive.}  I want to discuss diverse points of view on these topics.  I find the arguments from John Stuart Mill's \emph{On Liberty} \citep{OnLiberty1859} convincing for considering diverse voices less heard and developing a ``living truth'' rather than a ``dead dogma''.
     \item \textbf{Belief Revision.}  I will revise my beliefs and research goals as compelling new information is presented to me, within the scope of the project.
     \item \textbf{Historical Synthesis}.  There is a lot of work (which predates widespread LLM availability) which deserves attention, critical analysis, and potential synthesis with newer work in AI.
-    \item \textbf{Teaching.}  No use of generative models allowed by students.  Consistent with the methods at the MCMP, when feasible and applicable I believe formal methods and basic programming should be introduced to philosophy students.  See \href{https://github.com/CameronBeebe/Probability_Intro/blob/main/Coins.ipynb}{this jupyter notebook on basic probability as an example of an assignment.}  I would be interested in teaching a course based loosely on \cite{Ashby1958} \emph{Introduction to Cybernetics}.
+    \item \textbf{Teaching.}  No use of generative models allowed by students.  Consistent with the methods at the MCMP, when feasible and applicable I believe formal methods and basic programming should be introduced to philosophy students.  See \href{https://github.com/CameronBeebe/Probability_Intro/blob/main/Expected_Value.ipynb}{this jupyter notebook on basic expected value as an example of an assignment format.}  I would be interested in teaching a course based loosely on \cite{Ashby1958} \emph{Introduction to Cybernetics}, among other subjects.
     \item \textbf{Publishing.}  Papers on the topics outlined will be submitted to suitable journals.  Potential: \href{https://link.springer.com/collections/dibibiaidb}{Philosophy and Technology Special Issue}
     \item \textbf{Grants.}  I think we should try to get funding for interdisciplinary philosophical work on topics related to this project proposal.  I think it is possible and also desirable that funding comes from both industry and governmental funding sources.
     
@@ -779,7 +791,7 @@ which was implied by our list of desiderata above.  Formula \ref{eq:contourconfi
 
 \noindent \textbf{What I Learned:}  Parallelization through distributing computation to threads and communicating between them (MPI).  Initiation task on day 1 was to estimate the value of $\pi$ with a parallelized Monte Carlo simulation in Fortran.  Distinction between Model and Data Parallelism.  \\
 
-\noindent \textbf{Example Code Repo:} \href{https://github.com/CameronBeebe/Monte_Carlo}{Monte Carlo calculating pi with MPI and pyspark}
+\noindent \textbf{Example Code Repo:} \href{https://github.com/CameronBeebe/Monte_Carlo}{Monte Carlo calculating $\pi$ with MPI and pyspark}
 
 
 
@@ -801,13 +813,15 @@ Coding project in agent based modeling course at the MCMP using the Netlogo prog
 
 
 
-\section{Academic environment and relevant courses}
+%\section{Academic environment}
 
-Most courses I took involved some math, programming, and formal methods to varying degrees at LMU and through the Munich Center for Mathematical Philosophy (MCMP) and Graduate School of Systemic Neurosciences (GSN).  \\
+%Most courses I took involved some math, programming, and formal methods to varying degrees at LMU and through the Munich Center for Mathematical Philosophy (MCMP) and Graduate School of Systemic Neurosciences (GSN).  Interdisciplinary collaboration was encouraged.  \\
 
-\noindent The philosophy curriculum at the MCMP required basic formal methods: probability theory, information theory, formal logic, and basic linear algebra and calculus if working in more technical areas in philosophy of physics and interdisciplinary AI theory.  \\
+%\noindent The philosophy curriculum at the MCMP emphasized a variety of basic formal methods. \\
 
-\noindent Formal epistemology, rationality, and other philosophical aspects of cognition in consideration of artificial systems. \\
+%: probability theory, information theory, formal logic, and basic linear algebra and calculus if working in more technical areas in philosophy of physics and interdisciplinary AI theory.  \\
+
+%\noindent Formal epistemology, rationality, and other philosophical aspects of cognition in consideration of artificial systems. \\
 
 %\noindent Some of the courses included: \\
 
@@ -816,7 +830,7 @@ Most courses I took involved some math, programming, and formal methods to varyi
 
 \section{Coding}
 
-I have the most experience with python and associated packages and tools.  I have used jupyter notebooks, pandas, scikit-learn, keras (and some tensorflow through tf.keras), and other related packages.  Before I got into python I also used Netlogo (a language specialized for agent based modeling and visualization), some octave and matlab, and I am comfortable working through the command line on linux/unix terminals.  In general, I am able to read and write code and learn new syntax.  
+I have the most experience with python and associated packages and tools.  I have used jupyter notebooks, pandas, scikit-learn, keras (and some tensorflow through tf.keras), and other related packages.  Before I got into python I also used Netlogo (a language specialized for agent based modeling and visualization), some octave and matlab, and I can work through the command line on linux/unix terminals.  In general, I am able to read and write code and learn new syntax.
 
 \section{Real World Data Experience}
 
@@ -824,7 +838,7 @@ For the last year and a half I have been working at a cultivation facility start
 
 \begin{multicols}{2}
 \begin{itemize}
-    \item \textbf{Measurement and Recording}: PH; total dissolved solids (tds) or parts per million (ppm); water temperature; room humidity and temperatures; nutrient solution amounts; plant waste weight; 
+    \item \textbf{Measurement and Recording}: PH; total dissolved solids (tds) or parts per million (ppm); water temperature; room humidity and temperatures; nutrient solution amounts; plant weights; 
     \item \textbf{Calibration}: PH and TDS measurement devices.
     \item \textbf{Analysis:} We get reports of endogenous chemical composition in crop yields as tested by authorized labs, as well as reports of pesticide and spore residue (which must be below legal thresholds for sale).
 \end{itemize}
